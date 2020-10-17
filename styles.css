@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --gradienta: hsl(6, 100%, 80%);
+    --gradientb: hsl(335, 100%, 65%);
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+/* For mobile */
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: round;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxOne {
+    width: 325px;
+    height: 202px;
+    background-color: var(--DarkBlue);
+    border-radius: 10px 100px 10px 10px ;
+}
+
+.logo {
+    margin: 40px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    width: 140px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.document, .folder , .upload{
+    background-color: var(--VeryDarkBlue);
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.folder {
+    margin-left: 15px;
+}
+
+.upload {
+    margin-left: 15px;
+}
+
+.boxTwo {
+    width: 325px;
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 35px;
+    background-color: var(--DarkBlue);
+    color: var(--PaleBlue);
+    padding-top: 30px;
+}
+
+.text {
+    text-align: center;
+}
+
+span {
+    font-weight: 700;
+}
+
+.bar {
+    width: 262px;
+    height: 20px;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 20px;
+    margin: 20px 30px 10px 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 0.2px;
+}
+
+.insidebar {
+    width: 195px;
+    height: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),  hsl(335, 100%, 65%));
+    padding-top: 1px;
+}
+
+.whiteball {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 181px;
+    margin-top: 1px;
+}
+
+.limit {
+    font-weight: 700;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.whitebox {
+    width: 180px;
+    height: 65px;
+    background-color: var(--PaleBlue);
+    border-radius: 10px;
+    color: var(--VeryDarkBlue);
+    font-weight: 700;
+    font-size: 40px;
+    margin: 25px 80px 0 75px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.gl {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        background-color: var(--VeryDarkBlue);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-y: 300px;
+    }
+
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxOne {
+        width: 355px;
+        height: 205px;
+    }
+
+    .boxTwo {
+        width: 540px;
+        height: 155px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        margin-left: 40px;
+        margin-right: 270px;
+        margin-top: 5px;
+    }
+
+    .bar {
+        width: 460px;
+        height: 22px;
+    }
+
+    .insidebar {
+        width: 340px;
+    }
+
+    .whiteball {
+        margin-left: 326px;
+    }
+
+    .whitebox {
+        width: 180px;
+        height: 70px;
+        margin-top: -180px;
+        margin-left: 320px;
+        border-radius: 10px 10px 0px 10px;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-top: 30px solid  hsl(243, 100%, 93%);
+        border-left: 30px solid transparent;
+        margin-left: 470px;
+        margin-top: -5px;
+      }
+    
+}
